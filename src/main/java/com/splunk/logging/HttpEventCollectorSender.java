@@ -117,7 +117,7 @@ public class HttpEventCollectorSender extends TimerTask implements HttpEventColl
             long delay, long maxEventsBatchCount, long maxEventsBatchSize,
             String sendModeStr,
             Dictionary<String, String> metadata) {
-        this.url = Url + HttpEventCollectorUriPath;
+        this.url = Url ;//+ HttpEventCollectorUriPath;
         this.token = token;
         this.channel = channel;
         this.type = type;
